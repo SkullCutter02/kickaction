@@ -1,12 +1,13 @@
-const getTemplate = (newVal) => {
+const getNavTemplate = (newVal) => {
   return `
     <style>
       nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 60px;
+        height: var(--navHeight);
         background: #ffffff;
+        border-bottom: 4px solid #981313;
       }
 
       ul {
@@ -98,7 +99,7 @@ class Nav extends HTMLElement {
 
   attributeChangedCallback(attrName, oldValue, newVal) {
     if (oldValue !== newVal) {
-      if (attrName === "tab") this.innerHTML = getTemplate(newVal);
+      if (attrName === "tab") this.innerHTML = getNavTemplate(newVal);
     }
   }
 }
