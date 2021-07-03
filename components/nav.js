@@ -12,6 +12,16 @@ const getNavTemplate = (newVal) => {
         position: absolute;
         width: 100%;
       }
+      
+      .logo-container {
+        width: var(--navPercentage);
+        display: flex;
+        align-items: center;
+      }
+      
+      h3 {
+        text-transform: uppercase;
+      }
 
       ul {
         display: flex;
@@ -30,7 +40,6 @@ const getNavTemplate = (newVal) => {
       
       .logo {
         cursor: pointer;
-        width: var(--navPercentage);
       }
 
       .logo img {
@@ -74,9 +83,12 @@ const getNavTemplate = (newVal) => {
     </style>
 
     <nav>
-      <a href="./index.html" class="logo">
-        <img src="./images/logo.png" alt="logo" />
-      </a>
+      <div class="logo-container">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo.png" alt="logo" />
+        </a>
+        <h3>KickAction</h3>
+      </div>
       <ul>
         <li>
           <a href="./index.html" class="tab tab-1">Home</a>
