@@ -1,0 +1,44 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-about-us {
+  background: url("../images/hero.jpg");
+  background-size: cover;
+}
+
+.hero * {
+  color: #fff;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 30%;
+}
+
+.hero-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-40%, 10%);
+  font-size: 1.5rem;
+}
+
+.title {
+  font-weight: bold;
+  width: 100vw;
+}
+
+.description {
+  margin-top: 20px;
+  width: 50vw;
+  text-align: justify;
+}

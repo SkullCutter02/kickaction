@@ -7,7 +7,10 @@ const getNavTemplate = (newVal) => {
         align-items: center;
         height: var(--navHeight);
         background: #ffffff;
-        border-bottom: 4px solid #981313;
+        box-shadow: 0 -10px 20px 20px #2f2f2f;
+        z-index: 1000;
+        position: absolute;
+        width: 100%;
       }
 
       ul {
