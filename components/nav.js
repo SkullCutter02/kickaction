@@ -1,11 +1,6 @@
 const getTemplate = (newVal) => {
   return `
     <style>
-      :root {
-        --navPercentage: 5%;
-        --tabColor: #ff0000ff;
-      }
-
       nav {
         display: flex;
         justify-content: space-between;
