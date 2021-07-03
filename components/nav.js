@@ -64,7 +64,6 @@ const getTemplate = (newVal) => {
       }
       
       li a {
-        color: #000;
         font-weight: 500;
       }
     </style>
