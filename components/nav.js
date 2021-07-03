@@ -69,6 +69,7 @@ const getNavTemplate = (newVal) => {
       
       li a {
         font-weight: 500;
+        color: #000;
       }
     </style>
 

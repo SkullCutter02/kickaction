@@ -1,0 +1,24 @@
+.members {
+  margin: 100px auto;
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 80px;
+}
+
+.members * {
+  text-align: center;
+}
+
+.member img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px 4px #8a8a8a;
+}
+
+.member-name {
+  margin-bottom: 10px;
+}
