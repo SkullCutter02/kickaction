@@ -49,6 +49,11 @@ fetch("../data/members.json")
               src="./images/member_${memberId}.png"
               alt="hero"
               onerror="this.onerror = null; this.src = './images/hero.jpg'"
+              style="object-position: ${
+                memberData.imageOffsetModal
+                  ? memberData.imageOffsetModal
+                  : "initial"
+              }"
             />
             <div class="member-modal-content-text">
               <h1 class="member-modal-name">${memberData.name}</h1>

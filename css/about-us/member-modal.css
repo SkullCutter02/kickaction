@@ -6,6 +6,7 @@
   z-index: 100000000;
   opacity: 30%;
   transition: opacity 1s;
+  cursor: pointer;
 }
 
 .member-modal-overlay.loading {
@@ -14,8 +15,8 @@
 
 .member-modal-content {
   position: fixed;
-  width: 50%;
-  height: 60%;
+  width: 60%;
+  height: 66%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -43,10 +44,17 @@
 .member-modal-content-text {
   width: 60%;
   padding: 40px;
+  overflow: scroll;
 }
 
 .member-modal-name {
   margin-bottom: 4px;
+  font-size: 2.7rem;
+}
+
+.member-modal-description {
+  line-height: 1.7em;
+  /*font-size: 13px;*/
 }
 
 .member-modal-content-text .line {
@@ -63,15 +71,39 @@
     width: 80%;
     height: 70%;
   }
+
+  .member-modal-name {
+    font-size: 2.3rem;
+  }
+
+  .member-modal-description {
+    /*line-height: 1.5em;*/
+    font-size: 13px;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .member-modal-content {
-    width: 95%;
-    height: 50%;
+    width: 60%;
+    height: 80%;
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  .member-modal-content-img {
+    width: 100%;
+    max-height: 300px;
   }
 
   .member-modal-content-text {
     font-size: 14px;
+    width: 100%;
+    overflow: initial;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .member-modal-content {
+    width: 80%;
   }
 }
