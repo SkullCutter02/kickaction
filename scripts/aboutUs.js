@@ -35,6 +35,7 @@ fetch("../data/members.json")
 
         const modal = document.getElementById("member-modal");
 
+        // Modal HTML
         modal.innerHTML = `
           <div class="member-modal-overlay loading" id="member-modal-overlay"></div>
           <div class="member-modal-content loading">

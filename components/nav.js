@@ -22,6 +22,8 @@ const getNavTemplate = (newVal) => {
         text-transform: uppercase;
         color: #fff;
         font-size: 1.4rem;
+        font-family: Archivo, sans-serif;
+        font-weight: 900;
       }
 
       #nav-content {
@@ -89,11 +91,12 @@ const getNavTemplate = (newVal) => {
         left: 0;
         width: 100vw;
         height: 100vh;
-        z-index: -100;
         display: flex;
         justify-content: center;
         align-items: center;
         opacity: 0;
+        transition: opacity 0.2s;
+        z-index: 1;
       }
       
       .mobile-nav.enabled {
@@ -101,7 +104,6 @@ const getNavTemplate = (newVal) => {
       }
       
       .mobile-nav .overlay {
-        opacity: 0;
         transition: all 0.2s;
         position: fixed;
         top: 0;
@@ -109,32 +111,17 @@ const getNavTemplate = (newVal) => {
         width: 100vw;
         height: 100vh;
         z-index: 0;
-      }
-      
-      .mobile-nav.enabled .overlay {
-        opacity: 70%;
         background: #000;
+        opacity: 70%;
       }
       
-      .mobile-nav.enabled #mobile-nav-content li {
+      .mobile-nav #mobile-nav-content li {
         z-index: 2;
         margin: 30px 0;
+        transition: transform 0.4s;
       }
       
-      .mobile-nav.enabled #mobile-nav-content:nth-child(odd) {
-        transform: translateX(-100vw);
-        transition: all 0.4s;
-      }
-      
-      .mobile-nav.enabled #mobile-nav-content:nth-child(even) {
-        transform: translateX(100vw);
-      }
-      
-      .mobile-nav.enabled #mobile-nav-content li.active {
-        transform: translateX(0);
-      }
-      
-      .mobile-nav.enabled #mobile-nav-content li a {
+      .mobile-nav #mobile-nav-content li a {
         text-align: center;
         display: block;
       }
@@ -147,6 +134,11 @@ const getNavTemplate = (newVal) => {
         border: none;
         display: none;
         margin-right: 30px;
+      }
+      
+      .divided-hamburger.enabled {
+        position: fixed;
+        right: 0;
       }
       
       .divided-hamburger > .trigger:checked ~ span:nth-of-type(1) {
@@ -234,11 +226,7 @@ const getNavTemplate = (newVal) => {
         cursor: pointer;
       }
       
-      @media screen and (max-width: 1650px) {
-        .mobile-nav.enabled {
-          z-index: 2;
-        }
-      
+      @media screen and (max-width: 650px) {
         .divided-hamburger {
           display: block;
         }
