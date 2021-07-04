@@ -4,7 +4,8 @@
       "id": 1,
       "name": "Justin Kim",
       "role": "Headmaster & Co-founder",
-      "description": "Description"
+      "description": "Description",
+      "imageOffsetHome": "center -50px"
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "id": 3,
       "name": "Jack Liang",
       "role": "Head of Marketing",
-      "description": "Description"
+      "description": "Description",
+      "imageOffsetHome": "center 0"
     },
     {
       "id": 4,

@@ -7,7 +7,14 @@ fetch("../data/members.json")
     data.members.forEach((member) => {
       output += `
         <div class="member" id="member-${member.id}">
-          <img src="./images/hero.jpg" alt="member">
+          <img
+            src="./images/member_${member.id}.png"
+            alt="member"
+            onerror="this.onerror = null; this.src = './images/hero.jpg'"
+            style="object-position: ${
+              member.imageOffsetHome ? member.imageOffsetHome : "initial"
+            };"
+          />
           <h1 class="member-name">${member.name}</h1>
           <p class="member-position">${member.role}</p>
         </div>
@@ -33,8 +40,9 @@ fetch("../data/members.json")
           <div class="member-modal-content loading">
             <img
               class="member-modal-content-img"
-              src="./images/hero.jpg"
+              src="./images/member_${memberId}.png"
               alt="hero"
+              onerror="this.onerror = null; this.src = './images/hero.jpg'"
             />
             <div class="member-modal-content-text">
               <h1 class="member-modal-name">${memberData.name}</h1>
