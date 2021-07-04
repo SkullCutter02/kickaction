@@ -95,12 +95,13 @@ const getNavTemplate = (newVal) => {
         justify-content: center;
         align-items: center;
         opacity: 0;
-        transition: opacity 0.6s;
-        z-index: 1;
+        transition: opacity var(--hamburgerTransitionTime);
+        z-index: -1;
       }
       
       .mobile-nav.enabled {
         opacity: 100%;
+        z-index: 1;
       }
       
       .mobile-nav .overlay {
@@ -130,7 +131,7 @@ const getNavTemplate = (newVal) => {
       .mobile-nav #mobile-nav-content li {
         z-index: 2;
         margin: 30px 0;
-        transition: all 0.6s;
+        transition: all var(--hamburgerTransitionTime);
       }
       
       .mobile-nav #mobile-nav-content li a {
@@ -154,8 +155,8 @@ const getNavTemplate = (newVal) => {
       }
       
       .divided-hamburger > .trigger:checked ~ span:nth-of-type(1) {
-        left: calc(25px/ 8);
-        top: calc(25px/ 6);
+        left: calc(25px / 8);
+        top: calc(25px / 6);
       }
       
       .divided-hamburger > .trigger:hover ~ span {
@@ -238,7 +239,7 @@ const getNavTemplate = (newVal) => {
         cursor: pointer;
       }
       
-      @media screen and (max-width: 1650px) {
+      @media screen and (max-width: 650px) {
         .divided-hamburger {
           display: block;
         }
@@ -280,7 +281,7 @@ const getNavTemplate = (newVal) => {
     </nav>
     
     <div class="mobile-nav" id="mobile-nav">
-      <div class="overlay"></div>
+      <div class="overlay" id="mobile-nav-overlay"></div>
       <ul id="mobile-nav-content">
         <li>
           <a href="./index.html" class="tab tab-1">Home</a>
