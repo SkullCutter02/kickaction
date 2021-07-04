@@ -160,10 +160,6 @@ const getNavTemplate = (newVal) => {
         top: calc(25px / 6);
       }
       
-      .divided-hamburger > .trigger:hover ~ span {
-        background-color: var(--tabColor);
-      }
-      
       .divided-hamburger > .trigger:checked ~ span:nth-of-type(2) {
         left: calc(50% - (25px/ 8));
         top: calc(25px/ 6);
@@ -220,7 +216,7 @@ const getNavTemplate = (newVal) => {
       }
       
       .divided-hamburger > span {
-        background-color: var(--tabColor);
+        background-color: #fff;
         display: block;
         position: absolute;
         height: 4px;
