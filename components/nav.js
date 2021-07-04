@@ -24,7 +24,7 @@ const getNavTemplate = (newVal) => {
         font-size: 1.4rem;
       }
 
-      ul {
+      #nav-content {
         display: flex;
         justify-content: flex-end;
         width: calc(100% - var(--navPercentage));
@@ -32,7 +32,7 @@ const getNavTemplate = (newVal) => {
         height: 100%;
       }
 
-      ul li {
+      #nav-content li {
         margin-right: 30px;
         height: 100%;
         display: flex;
@@ -81,6 +81,62 @@ const getNavTemplate = (newVal) => {
         font-weight: 500;
         color: #fff;
         font-size: 1.2rem;
+      }
+      
+      .mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+      }
+      
+      .mobile-nav.enabled {
+        opacity: 100%;
+      }
+      
+      .mobile-nav .overlay {
+        opacity: 0;
+        transition: all 0.2s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+      }
+      
+      .mobile-nav.enabled .overlay {
+        opacity: 70%;
+        background: #000;
+      }
+      
+      .mobile-nav.enabled #mobile-nav-content li {
+        z-index: 2;
+        margin: 30px 0;
+      }
+      
+      .mobile-nav.enabled #mobile-nav-content:nth-child(odd) {
+        transform: translateX(-100vw);
+        transition: all 0.4s;
+      }
+      
+      .mobile-nav.enabled #mobile-nav-content:nth-child(even) {
+        transform: translateX(100vw);
+      }
+      
+      .mobile-nav.enabled #mobile-nav-content li.active {
+        transform: translateX(0);
+      }
+      
+      .mobile-nav.enabled #mobile-nav-content li a {
+        text-align: center;
+        display: block;
       }
       
       .divided-hamburger {
@@ -158,7 +214,7 @@ const getNavTemplate = (newVal) => {
       }
       
       .divided-hamburger > span {
-        background-color: #a4a4a4;
+        background-color: var(--tabColor);
         display: block;
         position: absolute;
         height: 4px;
@@ -178,12 +234,16 @@ const getNavTemplate = (newVal) => {
         cursor: pointer;
       }
       
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 1650px) {
+        .mobile-nav.enabled {
+          z-index: 2;
+        }
+      
         .divided-hamburger {
           display: block;
         }
         
-        ul {
+        #nav-content {
           display: none;
         }
       }
@@ -196,7 +256,7 @@ const getNavTemplate = (newVal) => {
         </a>
         <h3>KickAction</h3>
       </div>
-      <ul>
+      <ul id="nav-content">
         <li>
           <a href="./index.html" class="tab tab-1">Home</a>
         </li>
@@ -208,7 +268,7 @@ const getNavTemplate = (newVal) => {
         </li>
       </ul>
       
-      <button class="divided-hamburger">
+      <button class="divided-hamburger" id="hamburger">
         <input type="checkbox" class="trigger">
         <span></span>
         <span></span>
@@ -218,6 +278,21 @@ const getNavTemplate = (newVal) => {
         <span></span>
       </button>
     </nav>
+    
+    <div class="mobile-nav" id="mobile-nav">
+      <div class="overlay"></div>
+      <ul id="mobile-nav-content">
+        <li>
+          <a href="./index.html" class="tab tab-1">Home</a>
+        </li>
+        <li>
+          <a href="./about-us.html" class="tab tab-2">About Us</a>
+        </li>
+        <li>
+          <a href="./our-partners.html" class="tab tab-3">Our Partners</a>
+        </li>
+      </ul>
+    </div>
   `;
 };
 
