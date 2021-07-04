@@ -95,7 +95,7 @@ const getNavTemplate = (newVal) => {
         justify-content: center;
         align-items: center;
         opacity: 0;
-        transition: opacity 0.2s;
+        transition: opacity 0.6s;
         z-index: 1;
       }
       
@@ -115,10 +115,22 @@ const getNavTemplate = (newVal) => {
         opacity: 70%;
       }
       
+      .mobile-nav #mobile-nav-content li:nth-child(odd) {
+        transform: translate(-100vw, 0);
+      }
+      
+      .mobile-nav #mobile-nav-content li:nth-child(even) {
+        transform: translate(100vw, 0);
+      }
+      
+      .mobile-nav.enabled #mobile-nav-content li {
+        transform: translate(0, 0);
+      }
+      
       .mobile-nav #mobile-nav-content li {
         z-index: 2;
         margin: 30px 0;
-        transition: transform 0.4s;
+        transition: all 0.6s;
       }
       
       .mobile-nav #mobile-nav-content li a {
@@ -226,7 +238,7 @@ const getNavTemplate = (newVal) => {
         cursor: pointer;
       }
       
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 1650px) {
         .divided-hamburger {
           display: block;
         }
