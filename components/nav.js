@@ -137,6 +137,7 @@ const getNavTemplate = (newVal) => {
       .mobile-nav #mobile-nav-content li a {
         text-align: center;
         display: block;
+        font-size: 23px;
       }
       
       .divided-hamburger {
