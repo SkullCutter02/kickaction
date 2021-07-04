@@ -2,50 +2,50 @@
   "members": [
     {
       "id": 1,
-      "name": "Somebody",
-      "role": "Once told me",
+      "name": "Justin Kim",
+      "role": "Headmaster & Co-founder",
       "description": "Description"
     },
     {
       "id": 2,
-      "name": "Somebody",
-      "role": "Once told me",
+      "name": "Marco Lam",
+      "role": "Co-head of Graphic Designer & Co-founder",
       "description": "Description"
     },
     {
       "id": 3,
-      "name": "Somebody",
-      "role": "Once told me",
+      "name": "Jack Liang",
+      "role": "Head of Marketing",
       "description": "Description"
     },
     {
       "id": 4,
-      "name": "Somebody",
-      "role": "Once told me",
+      "name": "Leo Tang",
+      "role": "Head of Product Design",
       "description": "Description"
     },
     {
       "id": 5,
-      "name": "Somebody",
-      "role": "Once told me",
+      "name": "Michelle Qiu",
+      "role": "Co-head of Graphic Design",
       "description": "Description"
     },
     {
       "id": 6,
-      "name": "Somebody",
-      "role": "Once told me",
+      "name": "Alan Au",
+      "role": "Co-head of Technology",
       "description": "Description"
     },
     {
       "id": 7,
-      "name": "Somebody",
-      "role": "Once told me",
+      "name": "Alvin Ng",
+      "role": "Co-head of Technology",
       "description": "Description"
     },
     {
       "id": 8,
-      "name": "Somebody",
-      "role": "Once told me",
+      "name": "Nathan Woo",
+      "role": "Master Instructing",
       "description": "Description"
     }
   ]

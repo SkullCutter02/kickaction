@@ -6,8 +6,7 @@ const getNavTemplate = (newVal) => {
         justify-content: space-between;
         align-items: center;
         height: var(--navHeight);
-        background: #ffffff;
-        box-shadow: 0 -10px 20px 20px #2f2f2f;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
         z-index: 1000;
         position: absolute;
         width: 100%;
@@ -21,6 +20,8 @@ const getNavTemplate = (newVal) => {
       
       h3 {
         text-transform: uppercase;
+        color: #fff;
+        font-size: 1.4rem;
       }
 
       ul {
@@ -78,7 +79,8 @@ const getNavTemplate = (newVal) => {
       
       li a {
         font-weight: 500;
-        color: #000;
+        color: #fff;
+        font-size: 1.2rem;
       }
     </style>
 

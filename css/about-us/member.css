@@ -40,7 +40,7 @@
   background: #000;
   z-index: 1000;
   opacity: 30%;
-  transition: opacity 0.2s;
+  transition: opacity 1s;
 }
 
 .member-modal-overlay.loading {
@@ -62,7 +62,7 @@
 }
 
 .member-modal-content.loading {
-  transform: translate3d(100px, 100%, 100px);
+  top: 100%;
   opacity: 0;
 }
 

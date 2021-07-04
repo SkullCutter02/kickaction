@@ -3,6 +3,7 @@ fetch("../data/members.json")
   .then((data) => {
     let output = "";
 
+    // HTML for the members modal
     data.members.forEach((member) => {
       output += `
         <div class="member" id="member-${member.id}">
@@ -56,7 +57,17 @@ fetch("../data/members.json")
         document
           .getElementById("member-modal-overlay")
           .addEventListener("click", () => {
-            modal.innerHTML = "";
+            modal
+              .querySelector(".member-modal-overlay")
+              .classList.add("loading");
+
+            modal
+              .querySelector(".member-modal-content")
+              .classList.add("loading");
+
+            setTimeout(() => {
+              modal.innerHTML = "";
+            }, 450);
           });
       });
     }
