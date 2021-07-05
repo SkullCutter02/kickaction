@@ -66,3 +66,18 @@
   box-shadow: inset 300px 0 0 0 #fff;
   color: var(--primaryColor);
 }
+
+@media screen and (max-width: 850px) {
+  .partner {
+    flex-direction: column-reverse;
+  }
+
+  .partner > img {
+    width: 100%;
+  }
+
+  .partner-text-content {
+    width: 100%;
+    margin: 0;
+  }
+}
