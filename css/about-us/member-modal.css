@@ -5,7 +5,7 @@
   background: #000;
   z-index: 100000000;
   opacity: 30%;
-  transition: opacity 1s;
+  transition: opacity 0.4s;
   cursor: pointer;
 }
 
@@ -24,11 +24,11 @@
   display: flex;
   background: #323232;
   opacity: 100%;
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
 
 .member-modal-content.loading {
-  top: 100%;
+  top: 60%;
   opacity: 0;
 }
 
@@ -44,7 +44,7 @@
 .member-modal-content-text {
   width: 60%;
   padding: 40px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .member-modal-name {
