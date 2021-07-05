@@ -1,3 +1,13 @@
+const closeModal = (modal) => {
+  modal.querySelector(".member-modal-overlay").classList.add("loading");
+
+  modal.querySelector(".member-modal-content").classList.add("loading");
+
+  setTimeout(() => {
+    modal.innerHTML = "";
+  }, 450);
+};
+
 fetch("../data/members.json")
   .then((res) => res.json())
   .then((data) => {
@@ -58,14 +68,14 @@ fetch("../data/members.json")
                   : "initial"
               }"
             />
-            <div class="close">+</div>
+            <div class="close-btn">+</div>
             <div class="member-modal-content-text">
               <h1 class="member-modal-name">${memberData.name}</h1>
               <p class="member-modal-role">${memberData.role}</p>
               <span class="line"></span>
               <p class="member-modal-description">${memberData.description}</p>
             </div>
-          </div> 
+          </div>
         `;
 
         setTimeout(() => {
@@ -78,21 +88,13 @@ fetch("../data/members.json")
             .classList.remove("loading");
         }, 10);
 
+        modal
+          .querySelector(".close-btn")
+          .addEventListener("click", () => closeModal(modal));
+
         document
           .getElementById("member-modal-overlay")
-          .addEventListener("click", () => {
-            modal
-              .querySelector(".member-modal-overlay")
-              .classList.add("loading");
-
-            modal
-              .querySelector(".member-modal-content")
-              .classList.add("loading");
-
-            setTimeout(() => {
-              modal.innerHTML = "";
-            }, 450);
-          });
+          .addEventListener("click", () => closeModal(modal));
       });
     }
   })
