@@ -11,6 +11,9 @@ fetch("../data/partners.json")
           <div class="partner-text-content">
             <h2>${partner.name}</h2>
             <p class="partner-description">${partner.description}</p>
+            <div class="partner-website">
+              <a href="${partner.websiteUrl}" target="_blank">VIEW WEBSITE</a>
+            </div>
           </div>
           <img src="./images/partner_${partner.id}.png" alt="logo">
         </div>
