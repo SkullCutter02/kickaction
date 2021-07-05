@@ -10,6 +10,11 @@
   background-size: cover;
 }
 
+.hero-our-partners {
+  background: url("../images/hero.jpg") fixed;
+  background-size: cover;
+}
+
 .hero * {
   color: #fff;
 }
@@ -21,14 +26,14 @@
   width: 100%;
   height: 100vh;
   background: #000;
-  opacity: 30%;
+  opacity: 40%;
 }
 
 .hero-content {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-80%, 10%);
+  transform: translate(-80%, -10%);
   font-size: 1.5rem;
 }
 
@@ -48,6 +53,11 @@
   .hero-content {
     font-size: 1.25rem;
     transform: translate(-60%, -10%);
+    width: 70%;
+  }
+
+  .hero-description {
+    width: 100%;
   }
 }
 
@@ -63,5 +73,15 @@
   .hero-content {
     font-size: 0.95rem;
     transform: translate(-50%, -50%);
+    width: 80%;
+  }
+
+  .hero-content * {
+    text-align: center;
+  }
+
+  .hero-description {
+    width: 100%;
+    line-height: 1.6em;
   }
 }

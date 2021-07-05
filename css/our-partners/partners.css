@@ -1,0 +1,10 @@
+.partners {
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 75%;
+}
+
+.partners h3 {
+  color: #000;
+}

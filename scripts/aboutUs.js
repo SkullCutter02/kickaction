@@ -58,13 +58,14 @@ fetch("../data/members.json")
                   : "initial"
               }"
             />
+            <div class="close">+</div>
             <div class="member-modal-content-text">
               <h1 class="member-modal-name">${memberData.name}</h1>
               <p class="member-modal-role">${memberData.role}</p>
               <span class="line"></span>
               <p class="member-modal-description">${memberData.description}</p>
             </div>
-          </div>
+          </div> 
         `;
 
         setTimeout(() => {
