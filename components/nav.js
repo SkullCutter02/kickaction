@@ -54,7 +54,7 @@ const getNavTemplate = (newVal) => {
       }
       
       .tab${newVal ? "-" + newVal : ""} {
-        color: var(--tabColor);
+        color: var(--primaryColor);
       }
       
       .tab::after {
@@ -64,13 +64,13 @@ const getNavTemplate = (newVal) => {
         top: 120%;
         width: 100%;
         height: 2px;
-        background-color: var(--tabColor);
+        background-color: var(--primaryColor);
         transform: translateX(-50%) scaleX(0);
         transition: all 0.3s;
       }
       
       .tab:hover {
-        color: var(--tabColor);
+        color: var(--primaryColor);
         transition: all 0.3s;
       }
       

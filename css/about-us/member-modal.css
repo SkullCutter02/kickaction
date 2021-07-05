@@ -60,7 +60,7 @@
 .member-modal-content-text .line {
   display: block;
   margin: 15px 0;
-  background: var(--tabColor);
+  background: var(--primaryColor);
   width: 100%;
   min-width: 150px;
   height: 2px;
@@ -106,7 +106,7 @@
   position: absolute;
   top: 0;
   right: 20px;
-  color: var(--tabColor);
+  color: var(--primaryColor);
   font-size: 50px;
   transform: rotate(45deg);
   cursor: pointer;
