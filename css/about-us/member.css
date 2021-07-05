@@ -77,6 +77,10 @@
   margin-bottom: 10px;
 }
 
+.member-position {
+  color: var(--secondaryTextColor);
+}
+
 @media screen and (max-width: 1200px) {
   .members {
     grid-template-columns: repeat(3, 1fr);
