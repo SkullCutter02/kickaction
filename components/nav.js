@@ -18,7 +18,7 @@ const getNavTemplate = (newVal) => {
         align-items: center;
       }
       
-      h3 {
+      nav h3 {
         text-transform: uppercase;
         color: #fff;
         font-size: 1.4rem;

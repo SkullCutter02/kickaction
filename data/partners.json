@@ -1,0 +1,20 @@
+{
+  "partners": [
+    {
+      "id": 1,
+      "name": "HELP for domestic workers"
+    },
+    {
+      "id": 2,
+      "name": "COEXIST"
+    },
+    {
+      "id": 3,
+      "name": "Helpers for Helpers"
+    },
+    {
+      "id": 4,
+      "name": "Kids for SDGs"
+    }
+  ]
+}
