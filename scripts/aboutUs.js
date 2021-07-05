@@ -7,17 +7,20 @@ fetch("../data/members.json")
     data.members.forEach((member) => {
       output += `
         <div class="member" id="member-${member.id}">
-          <div class="member-image">
-            <img
-              src="./images/member_${member.id}.png"
-              alt="member"
-              onerror="this.onerror = null; this.src = './images/hero.jpg'"
-              style="object-position: ${
-                member.imageOffsetHome ? member.imageOffsetHome : "initial"
-              };"
-            />
-            <div class="member-overlay">
-              <p class="view-profile">View Profile</p>
+          <div class="member-ratio">
+            <svg viewBox="0 0 1 1"></svg>
+            <div class="member-image">
+              <img
+                src="./images/member_${member.id}.png"
+                alt="member"
+                onerror="this.onerror = null; this.src = './images/hero.jpg'"
+                style="object-position: ${
+                  member.imageOffsetHome ? member.imageOffsetHome : "initial"
+                };"
+              />
+              <div class="member-overlay">
+                <p class="view-profile">View Profile</p>
+              </div>
             </div>
           </div>
           <h1 class="member-name">${member.name}</h1>

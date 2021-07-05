@@ -16,11 +16,18 @@
   width: 100%;
 }
 
+.member-ratio {
+  display: grid;
+  margin-bottom: 20px;
+}
+
+.member-ratio > * {
+  grid-area: 1 / 1;
+}
+
 .member-image {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1;
-  margin-bottom: 20px;
 }
 
 .member img {
