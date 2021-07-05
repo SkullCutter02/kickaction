@@ -1,8 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .partners {
-  width: 85%;
   margin: 50px auto;
 }
 
 .partner {
   display: flex;
+  padding: 40px;
+}
+
+.partner:nth-child(odd) {
+  background: var(--bg);
+}
+
+.partner:nth-child(even) {
+  background: #3f4141;
+}
+
+.partner > img {
+  width: 65%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.partner-text-content {
+  width: 35%;
+  margin-left: 5%;
+  margin-right: 70px;
+}
+
+.partner-text-content h2 {
+  font-family: Archivo, serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+
+.partner-description {
+  line-height: 1.6em;
+  color: var(--secondaryTextColor);
 }

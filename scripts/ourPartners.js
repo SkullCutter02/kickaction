@@ -10,8 +10,9 @@ fetch("../data/partners.json")
         <div class="partner">
           <div class="partner-text-content">
             <h2>${partner.name}</h2>
+            <p class="partner-description">${partner.description}</p>
           </div>
-          <img src="./images/logo.png" alt="logo">
+          <img src="./images/partner_${partner.id}.png" alt="logo">
         </div>
       `;
     });

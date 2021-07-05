@@ -2,19 +2,23 @@
   "partners": [
     {
       "id": 1,
-      "name": "HELP for domestic workers"
+      "name": "HELP for Domestic Workers",
+      "description": "HELP for Domestic Workers, provides free advice and assistance on employment, immigration and human rights issues to domestic workers in Hong Kong. Every domestic worker in Hong Kong, irrespective of race, nationality, religion, sexual orientation or gender, should have access to justice and receive equal and fair treatment before the law."
     },
     {
       "id": 2,
-      "name": "COEXIST"
+      "name": "COEXIST",
+      "description": "Coexist HK is a migrant worker advocacy group based in Hong Kong aiming to provide a platform for migrant workers to share their stories through the arts. From art exhibitions to hosting educational events, Coexist HK's ultimate goal is to foster the spirit of inclusiveness and respect amongst the general Hong Kong community."
     },
     {
       "id": 3,
-      "name": "Helpers for Helpers"
+      "name": "Helpers for Helpers",
+      "description": "Helpers for Helpers is a nonprofit organisation aiming to raise awareness for domestic and migrant worker experiences through the power of stories."
     },
     {
       "id": 4,
-      "name": "Kids for SDGs"
+      "name": "Kids for SDGs",
+      "description": "Funded by The MXA Group and curated by Global Citizen Capital, KIDsforSDGs is a non-profit venture which provides a comprehensive SDG journey which addresses a variety of topics surrounding education. The program empowers kids (and youth) to achieve their personal and professional best - doing what they love - while also making the world more sustainable."
     }
   ]
 }
