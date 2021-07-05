@@ -1,37 +1,8 @@
 .partners {
-  margin: 100px auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 75%;
-  grid-row-gap: 70px;
-  grid-column-gap: 90px;
+  width: 85%;
+  margin: 50px auto;
 }
 
-.partner-ratio {
-  display: grid;
-  margin-bottom: 20px;
-}
-
-.partner-ratio > * {
-  grid-area: 1 / 1;
-}
-
-.partner-image {
-  position: relative;
-  width: 100%;
-}
-
-.partner img {
-  object-fit: cover;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /*box-shadow: 0 0 10px 2px #919191;*/
-}
-
-.partners h3 {
-  text-align: center;
+.partner {
+  display: flex;
 }

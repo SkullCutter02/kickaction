@@ -8,13 +8,10 @@ fetch("../data/partners.json")
     partners.forEach((partner) => {
       output += `
         <div class="partner">
-          <div class="partner-ratio">
-            <svg viewBox="0 0 1 1"></svg>
-            <div class="partner-image">
-              <img src="./images/logo.png" alt="logo" />
-            </div>
+          <div class="partner-text-content">
+            <h2>${partner.name}</h2>
           </div>
-          <h3>${partner.name}</h3>
+          <img src="./images/logo.png" alt="logo">
         </div>
       `;
     });
