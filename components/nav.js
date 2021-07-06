@@ -130,7 +130,7 @@ const getNavTemplate = (newVal) => {
       
       .mobile-nav #mobile-nav-content li {
         z-index: 2;
-        margin: 30px 0;
+        padding: 20px 0;
         transition: all var(--hamburgerTransitionTime);
       }
       
