@@ -5,15 +5,21 @@ const footerTemplate = `
       width: 100%;
       padding: 60px 0;
       display: flex;
+      flex-direction: column-reverse;
     }
     
     .footer-info {
       height: 100%;
     }
     
+    .footer-info h3 {
+      margin-bottom: 20px;
+      color: var(--secondaryTextColor);
+    }
+    
     .footer-info a, .footer-info p {
       margin-bottom: 10px;
-      color: var(--secondaryTextColor);
+      color: var(--tertiaryTextColor);
     }
     
     .footer-links a {
@@ -31,9 +37,9 @@ const footerTemplate = `
       position: relative;
       background: url("../images/logo.png") center no-repeat;
       background-size: contain;
-      height: 200px;
-      width: 20%;
-      top: 0;
+      height: 150px;
+      width: 100%;
+      margin: 40px 0;
     }
     
     .footer-org-name {
@@ -49,8 +55,8 @@ const footerTemplate = `
     
     .footer-text {
       display: flex;
-      width: 70%;
-      justify-content: space-around;
+      width: 100%;
+      justify-content: space-evenly;
     }
     
     .signup-btn {
@@ -72,22 +78,7 @@ const footerTemplate = `
       color: var(--footerColor) !important;
     }
     
-    @media screen and (max-width: 900px) {
-      footer {
-        flex-direction: column;
-      }
-      
-      .footer-logo {
-        width: 80%;
-        margin: 0 auto 40px auto;
-      }
-      
-      .footer-text {
-        width: 100%;
-      }
-    }
-    
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 650px) {
       .footer-text {
         flex-direction: column;
         align-items: center;
@@ -115,21 +106,18 @@ const footerTemplate = `
     <div class="footer-text">
       <div class="footer-signup footer-info">
         <h3>Sign Up</h3>
-        <div class="footer-line"></div>
         <div class="footer-button">
           <a class="signup-btn" href="https://docs.google.com/forms/d/15kOPHlDh8Xzlc0HCOGPunm35Z3fuHIxDjzM5Cq3sbzg/edit" target="_blank">Signup Form</a>
         </div>
       </div>
       <div class="footer-links footer-info">
         <h3>Quick Links</h3>
-        <div class="footer-line"></div>
         <a href="../index.html">Home</a>
         <a href="../about-us.html">About Us</a>
         <a href="../our-partners.html">Our Partners</a>
       </div>
       <div class="footer-contact-us footer-info">
         <h3>Contact Us</h3>
-        <div class="footer-line"></div>
         <p><i class="fab fa-whatsapp"></i> +852 9667 5373</p>
         <p><i class="fab fa-whatsapp"></i> +852 6880 1308</p>
         <p><i class="fas fa-envelope"></i> kickaction.hk@gmail.com</p>
