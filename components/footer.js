@@ -78,6 +78,10 @@ const footerTemplate = `
       color: var(--footerColor) !important;
     }
     
+    footer i {
+      color: var(--tertiaryTextColor);
+    }
+    
     @media screen and (max-width: 650px) {
       .footer-text {
         flex-direction: column;
