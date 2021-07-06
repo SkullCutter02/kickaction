@@ -68,6 +68,16 @@
   height: 2px;
 }
 
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: var(--primaryColor);
+  font-size: 50px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1050px) {
   .member-modal-content {
     width: 80%;
@@ -79,7 +89,6 @@
   }
 
   .member-modal-description {
-    /*line-height: 1.5em;*/
     font-size: 13px;
   }
 }
@@ -102,16 +111,6 @@
     width: 100%;
     overflow: initial;
   }
-}
-
-.close-btn {
-  position: absolute;
-  top: 0;
-  right: 20px;
-  color: var(--primaryColor);
-  font-size: 50px;
-  transform: rotate(45deg);
-  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
