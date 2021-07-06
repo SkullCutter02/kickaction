@@ -4,20 +4,20 @@
 }
 
 .partners {
-  margin: 50px auto 0 auto;
+  margin: 0 auto;
 }
 
 .partner {
   display: flex;
-  padding: 40px;
+  padding: 80px 40px;
 }
 
 .partner:nth-child(odd) {
-  background: var(--bg);
+  background: #373737;
 }
 
 .partner:nth-child(even) {
-  background: #313535;
+  background: var(--bg);
 }
 
 .partner > img {

@@ -1,4 +1,4 @@
-const template = `
+const faviconTemplate = `
   <link
     rel="apple-touch-icon"
     sizes="57x57"
@@ -83,7 +83,7 @@ class Favicon extends HTMLElement {
   }
 
   connectedCallback() {
-    this.innerHTML = template;
+    this.innerHTML = faviconTemplate;
   }
 }
 
