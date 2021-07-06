@@ -18,7 +18,7 @@ setTimeout(() => {
       nav.style.zIndex = "1";
 
       for (let i = 0; i < spans.length; i++) {
-        spans[i].style.backgroundColor = "var(--tabColor)";
+        spans[i].style.backgroundColor = "var(--primaryColor)";
       }
     } else {
       hamburger.querySelector("input").checked = false;
