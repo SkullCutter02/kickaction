@@ -33,7 +33,6 @@ const footerTemplate = `
       background-size: contain;
       height: 200px;
       width: 40%;
-      z-index: 1;
       top: 0;
     }
     
