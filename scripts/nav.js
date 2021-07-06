@@ -4,7 +4,13 @@ setTimeout(() => {
   const overlay = document.getElementById("mobile-nav-overlay");
   const spans = hamburger.querySelectorAll("span");
 
-  const toggleHamburger = () => {
+  const toggleHamburger = (e) => {
+    if (
+      e.target.id === "mobile-nav-overlay" &&
+      !hamburger.classList.contains("enabled")
+    )
+      return;
+
     hamburger.classList.toggle("enabled");
     nav.classList.toggle("enabled");
 
