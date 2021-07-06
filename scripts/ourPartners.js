@@ -8,14 +8,14 @@ fetch("../data/partners.json")
     partners.forEach((partner) => {
       output += `
         <div class="partner">
-          <div class="partner-text-content">
+          <div class="partner-text-content" data-aos="fade-right">
             <h2>${partner.name}</h2>
             <p class="partner-description">${partner.description}</p>
             <div class="partner-website">
               <a href="${partner.websiteUrl}" target="_blank">VIEW WEBSITE</a>
             </div>
           </div>
-          <img src="./images/partner_${partner.id}.png" alt="logo">
+          <img src="./images/partner_${partner.id}.png" alt="logo" data-aos="fade-left">
         </div>
       `;
     });
