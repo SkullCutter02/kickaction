@@ -23,7 +23,7 @@
   transform: translate(-50%, -50%);
   z-index: 100000000000;
   display: flex;
-  background: #323232;
+  background: var(--modalColor);
   opacity: 100%;
   transition: all 0.4s;
 }
@@ -46,6 +46,8 @@
   width: 60%;
   padding: 40px;
   overflow-y: scroll;
+  scrollbar-base-color: var(--modalColor);
+  scrollbar-face-color: var(--modalColor);
 }
 
 .member-modal-name {
@@ -87,7 +89,7 @@
     width: 60%;
     height: 80%;
     flex-direction: column;
-    overflow: scroll;
+    overflow-y: scroll;
   }
 
   .member-modal-content-img {
