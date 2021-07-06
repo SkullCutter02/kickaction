@@ -34,4 +34,4 @@ setTimeout(() => {
 
   hamburger.addEventListener("click", toggleHamburger);
   overlay.addEventListener("click", toggleHamburger);
-}, 1);
+}, 100);
