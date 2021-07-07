@@ -300,10 +300,10 @@ class Nav extends HTMLElement {
   }
 
   connectedCallback() {
-    const hamburger = document.getElementById("hamburger");
-    const nav = document.getElementById("mobile-nav");
-    const overlay = document.getElementById("mobile-nav-overlay");
-    const spans = hamburger.querySelectorAll("span");
+    const hamburger = this.querySelector("#hamburger");
+    const nav = this.querySelector("#mobile-nav");
+    const overlay = this.querySelector("#mobile-nav-overlay");
+    const spans = this.querySelectorAll("span");
 
     hamburger.classList.remove("enabled");
     nav.classList.remove("enabled");
