@@ -6,10 +6,11 @@ const getNavTemplate = (newVal) => {
         justify-content: space-between;
         align-items: center;
         height: var(--navHeight);
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+        background: var(--bg);
         z-index: 1000;
-        position: absolute;
+        position: fixed;
         width: 100%;
+        box-shadow: 0 1px 10px 10px rgba(0, 0, 0, 0.3);
       }
       
       .logo-container {
@@ -148,11 +149,6 @@ const getNavTemplate = (newVal) => {
         border: none;
         display: none;
         margin-right: 30px;
-      }
-      
-      .divided-hamburger.enabled {
-        position: fixed;
-        right: 0;
       }
       
       .divided-hamburger > .trigger:checked ~ span:nth-of-type(1) {
