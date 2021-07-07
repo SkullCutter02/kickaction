@@ -3,9 +3,24 @@ const footerTemplate = `
     footer {
       background: var(--footerColor);
       width: 100%;
-      padding: 60px 0;
+      padding-top: 60px;
+      padding-bottom: 30px;
       display: flex;
       flex-direction: column-reverse;
+    }
+    
+    .footer-credits {
+      width: 100%;
+      margin-top: 40px;
+    }
+    
+    .footer-credits p {
+      text-align: center;
+      color: var(--quaternaryTextColor);
+    }
+    
+    .footer-credits i {
+      color: var(--quaternaryTextColor);
     }
     
     .footer-info {
@@ -63,18 +78,17 @@ const footerTemplate = `
       padding: 10px;
       margin-top: 10px;
       display: inline-block;
-      border: 2px solid var(--secondaryTextColor);
-      color: var(--primaryTextColor) !important;
+      border: 2px solid var(--tertiaryTextColor);
       text-transform: uppercase;
       font-family: Archivo, serif;
       font-weight: 600;
       letter-spacing: 0.1em;
-      box-shadow: inset 0 0 0 0 var(--secondaryTextColor);
+      box-shadow: inset 0 0 0 0 var(--tertiaryTextColor);
       transition: all ease-out 0.3s;
     }
     
     .signup-btn:hover {
-      box-shadow: inset 300px 0 0 0 var(--secondaryTextColor);
+      box-shadow: inset 300px 0 0 0 var(--tertiaryTextColor);
       color: var(--footerColor) !important;
     }
     
@@ -104,9 +118,9 @@ const footerTemplate = `
   </style>
   
   <footer>
-<!--    <div class="footer-logo">-->
-<!--      <h2 class="footer-org-name">KickAction</h2>-->
-<!--    </div>-->
+    <div class="footer-credits">
+      <p><i class="fas fa-code"></i> Coded by Alan Au and Alvin Ng</p>
+    </div>
     <div class="footer-text">
       <div class="footer-signup footer-info">
         <h3>Sign Up</h3>
