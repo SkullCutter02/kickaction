@@ -104,9 +104,9 @@ const footerTemplate = `
   </style>
   
   <footer>
-    <div class="footer-logo">
-      <h2 class="footer-org-name">KickAction</h2>
-    </div>
+<!--    <div class="footer-logo">-->
+<!--      <h2 class="footer-org-name">KickAction</h2>-->
+<!--    </div>-->
     <div class="footer-text">
       <div class="footer-signup footer-info">
         <h3>Sign Up</h3>
