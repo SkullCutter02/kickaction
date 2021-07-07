@@ -59,6 +59,27 @@
   text-align: justify;
 }
 
+.index-sign-up {
+  /* margin calc same as padding in a */
+  margin: calc(10px + 30px) 0;
+}
+
+.index-sign-up a {
+  color: #fff;
+  padding: 15px;
+  font-family: Archivo, serif;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  background: var(--primaryColor);
+  box-shadow: inset 0 0 0 0 var(--primaryTextColor);
+  transition: all ease-out 0.3s;
+}
+
+.index-sign-up a:hover {
+  box-shadow: inset 300px 0 0 0 var(--primaryTextColor);
+  color: var(--primaryColor);
+}
+
 @media screen and (max-width: 1000px) {
   .hero-content {
     font-size: 1.25rem;
