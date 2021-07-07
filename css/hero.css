@@ -8,7 +8,6 @@
 .hero-about-us {
   background: url("../heroes/about-us-hero.png") fixed;
   background-size: cover;
-  background-position-y: 40px;
 }
 
 .hero-our-partners {
@@ -74,16 +73,16 @@
 
 @media screen and (max-width: 600px) {
   .hero {
-    height: 60vh;
+    height: 70vh;
   }
 
   .hero-overlay {
-    height: 60vh;
+    height: 70vh;
   }
 
   .hero-content {
     font-size: 0.95rem;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     width: 80%;
   }
 
