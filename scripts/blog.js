@@ -69,7 +69,9 @@ fetch("../data/blog.json")
                 next
               </button>
             </div>
-          </div>`
+          </div>
+        </div>
+            `
             : ""
         }
           <p class="blog-article-description blog-article-modal-description">${
@@ -83,7 +85,7 @@ fetch("../data/blog.json")
           type: "carousel",
           startAt: 0,
           perView: 1,
-          animationDuration: 700,
+          animationDuration: 900,
         }).mount();
       });
     }

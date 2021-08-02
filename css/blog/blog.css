@@ -95,4 +95,9 @@ article {
     margin: 0 0 30px;
     height: 200px;
   }
+
+  #blog-modal {
+    width: 95%;
+    height: 80%;
+  }
 }
