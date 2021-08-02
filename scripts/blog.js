@@ -12,9 +12,10 @@ fetch("../data/blog.json")
   .then((data) => {
     let output = "";
 
-    data.blogs.forEach((blog) => {
+    data.blogs.forEach((blog, i) => {
+      console.log(i);
       output += `
-          <article>
+          <article data-aos="${i % 2 === 0 ? "fade-right" : "fade-left"}">
             ${
               blog.imagesLink?.length > 0
                 ? `
