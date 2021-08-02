@@ -6,7 +6,7 @@
 }
 
 .hero-about-us {
-  background: url("../heroes/about-us-hero.png") fixed;
+  background: url("../heroes/about-us-hero.jpg") fixed;
   background-size: cover;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .hero-blog {
-  background: url("../heroes/our-partners-hero.jpg") fixed;
+  background: url("../heroes/blog-hero.png") fixed;
   background-size: cover;
 }
 
