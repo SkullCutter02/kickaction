@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/blog/blog.css" />
     <link rel="stylesheet" href="css/hero.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
     <script src="./components/nav.js" type="text/javascript" defer></script>
     <script src="./components/favicon.js" type="text/javascript" defer></script>
     <script src="./components/footer.js" type="text/javascript" defer></script>
@@ -23,6 +31,11 @@
   </head>
   <body>
     <nav-component tab="4"></nav-component>
+
+    <div id="blog-modal-container" class="disabled">
+      <div class="blog-overlay"></div>
+      <div id="blog-modal" aria-modal="true"></div>
+    </div>
 
     <div class="hero hero-blog">
       <span class="hero-overlay"></span>
@@ -42,6 +55,7 @@
 
     <footer-component></footer-component>
 
-    <script src="./scripts/blog.js"></script>
+    <script src="./scripts/blog.js" type="module"></script>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
   </body>
 </html>
