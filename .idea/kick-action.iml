@@ -10,5 +10,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="aos" level="application" />
     <orderEntry type="library" name="@glidejs" level="application" />
+    <orderEntry type="library" name="@glidejs/glide" level="application" />
   </component>
 </module>
