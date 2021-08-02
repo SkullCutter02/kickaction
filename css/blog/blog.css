@@ -100,4 +100,8 @@ article {
     width: 95%;
     height: 80%;
   }
+
+  #blog-modal img {
+    height: 300px;
+  }
 }
