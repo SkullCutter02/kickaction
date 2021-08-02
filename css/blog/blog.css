@@ -1,0 +1,31 @@
+section {
+  width: 85%;
+  margin: 100px auto;
+}
+
+article {
+  background: #303030;
+  padding: 30px;
+  box-shadow: 0px 0px 20px 5px #1f1f1f;
+  margin: 70px 0;
+}
+
+.blog-article-title {
+  float: left;
+}
+
+.blog-article-date {
+  float: right;
+  margin-bottom: 40px;
+}
+
+.blog-article-description {
+  clear: both;
+  text-align: justify;
+  line-height: 1.4em;
+  margin-top: 50px;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}

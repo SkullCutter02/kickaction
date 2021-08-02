@@ -15,6 +15,11 @@
   background-size: cover;
 }
 
+.hero-blog {
+  background: url("../heroes/our-partners-hero.jpg") fixed;
+  background-size: cover;
+}
+
 .hero * {
   color: #fff;
 }

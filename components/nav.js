@@ -260,6 +260,9 @@ const getNavTemplate = (newVal) => {
         <li>
           <a href="./our-partners.html" class="tab tab-3">Our Partners</a>
         </li>
+        <li>
+          <a href="./blog.html" class="tab tab-4">Blog</a>
+        </li>
       </ul>
       
       <button class="divided-hamburger" id="hamburger">
