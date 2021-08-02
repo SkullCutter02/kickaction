@@ -133,6 +133,7 @@ const footerTemplate = `
         <a href="../index.html">Home</a>
         <a href="../about-us.html">About Us</a>
         <a href="../our-partners.html">Our Partners</a>
+        <a href="../blog.html">Blog</a>
       </div>
       <div class="footer-contact-us footer-info">
         <h3>Contact Us</h3>
