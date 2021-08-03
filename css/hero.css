@@ -20,6 +20,11 @@
   background-size: cover;
 }
 
+.hero-impact {
+  background: url("../heroes/blog-hero.png") fixed;
+  background-size: cover;
+}
+
 .hero * {
   color: #fff;
 }

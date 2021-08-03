@@ -263,6 +263,9 @@ const getNavTemplate = (newVal) => {
         <li>
           <a href="./blog.html" class="tab tab-4">Blog</a>
         </li>
+        <li>
+          <a href="./impact.html" class="tab tab-5">Impact</a>
+        </li>
       </ul>
       
       <button class="divided-hamburger" id="hamburger">
@@ -290,6 +293,9 @@ const getNavTemplate = (newVal) => {
         </li>
         <li>
           <a href="./blog.html" class="tab tab-4">Blog</a>
+        </li>
+        <li>
+          <a href="./impact.html" class="tab tab-5">Impact</a>
         </li>
       </ul>
     </div>

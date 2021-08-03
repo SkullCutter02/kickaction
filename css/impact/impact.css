@@ -1,0 +1,18 @@
+section {
+  width: 60%;
+  margin: 80px auto;
+}
+
+article {
+  margin: 40px 0;
+}
+
+article p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 850px) {
+  section {
+    width: 75%;
+  }
+}
