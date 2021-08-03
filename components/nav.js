@@ -232,7 +232,7 @@ const getNavTemplate = (newVal) => {
         cursor: pointer;
       }
       
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 950px) {
         .divided-hamburger {
           display: block;
         }
