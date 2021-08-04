@@ -1,3 +1,9 @@
 {
-  "blogs": []
+  "blogs": [
+    {
+      "date": "12/01/2021",
+      "title": "Lorem",
+      "body": "Lorem ipsum"
+    }
+  ]
 }

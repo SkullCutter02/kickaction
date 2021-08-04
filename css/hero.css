@@ -47,8 +47,8 @@
 .hero-content {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-80%, -10%);
+  down: 0;
+  transform: translate(-80%, 200px);
   font-size: 1.5rem;
 }
 
