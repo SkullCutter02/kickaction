@@ -98,14 +98,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .hero {
-    height: 70vh;
-  }
-
-  .hero-overlay {
-    height: 70vh;
-  }
-
   .hero-content {
     font-size: 0.95rem;
     transform: translate(-50%, -40%);
