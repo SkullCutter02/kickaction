@@ -33,7 +33,7 @@
   z-index: -1;
 }
 
-input[type="checkbox"] {
+.sdg-checkbox {
   display: none;
 }
 
