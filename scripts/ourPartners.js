@@ -15,7 +15,7 @@ fetch("../data/partners.json")
               <a href="${partner.websiteUrl}" target="_blank">VIEW WEBSITE</a>
             </div>
           </div>
-          <img src="./images/partner_${partner.id}.png" alt="logo" data-aos="fade-left">
+          <img src="./images/partners/partner_${partner.id}.png" alt="logo" data-aos="fade-left">
         </div>
       `;
     });

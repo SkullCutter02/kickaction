@@ -21,7 +21,7 @@ fetch("../data/members.json")
             <svg viewBox="0 0 1 1"></svg>
             <div class="member-image">
               <img
-                src="./images/member_${member.id}.png"
+                src="./images/members/member_${member.id}.png"
                 alt="member"
                 onerror="this.onerror = null; this.src = './images/hero.jpg'"
                 style="object-position: ${
