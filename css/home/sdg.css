@@ -1,0 +1,45 @@
+.sdgs-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-gap: 50px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.sdg-card {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.sdg-card img {
+  widows: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sdg-card-info {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  transition: all 0.2s;
+  padding: 20px;
+  text-align: justify;
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#sdg-5:checked ~ .sdgs-container > .sdg-card-5 > .sdg-card-info,
+#sdg-3:checked ~ .sdgs-container > .sdg-card-3 > .sdg-card-info,
+#sdg-10:checked ~ .sdgs-container > .sdg-card-10 > .sdg-card-info {
+  opacity: 100%;
+  z-index: 2;
+}
