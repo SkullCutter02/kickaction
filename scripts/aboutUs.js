@@ -59,7 +59,7 @@ fetch("../data/members.json")
           <div class="member-modal-content loading">
             <img
               class="member-modal-content-img"
-              src="./images/member_${memberId}.png"
+              src="./images/members/member_${memberId}.png"
               alt="hero"
               onerror="this.onerror = null; this.src = './images/hero.jpg'"
               style="object-position: ${
