@@ -123,7 +123,7 @@ const footerTemplate = `
   
   <footer>
     <div class="footer-credits">
-      <p><i class="fas fa-code"></i> Coded by <a href="https://webforge.netlify.app" target="_blank">Webforge</a></p>
+      <p><i class="fas fa-code"></i> Designed and built by <a href="https://webforge.netlify.app" target="_blank">Webforge</a></p>
     </div>
     <div class="footer-text">
       <div class="footer-signup footer-info">
