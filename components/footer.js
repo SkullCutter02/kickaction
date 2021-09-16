@@ -23,6 +23,10 @@ const footerTemplate = `
       color: var(--quaternaryTextColor);
     }
     
+    .footer-credits a {
+      color: #D26267;
+    }
+    
     .footer-info {
       height: 100%;
     }
@@ -119,7 +123,7 @@ const footerTemplate = `
   
   <footer>
     <div class="footer-credits">
-      <p><i class="fas fa-code"></i> Coded by Alan Au and Alvin Ng</p>
+      <p><i class="fas fa-code"></i> Coded by <a href="https://webforge.netlify.app" target="_blank">Webforge</a></p>
     </div>
     <div class="footer-text">
       <div class="footer-signup footer-info">
